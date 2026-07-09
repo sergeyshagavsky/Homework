@@ -1,0 +1,13 @@
+Иван;
+Java Core,Хорстманн,700,2019;
+Effective Java,Блох,450,2018;
+Clean Code,Мартин,430,2008;
+Java Concurrency,Гетц,520,2006;
+Head First Java,Сьерра,600,2005
+
+Петр;
+Java Core,Хорстманн,700,2019;
+Spring in Action,Уоллс,520,2021;
+Clean Code,Мартин,430,2008;
+Algorithms,Кормен,1300,2001;
+Thinking in Java,Эккель,1100,2006
