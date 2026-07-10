@@ -19,7 +19,6 @@ public class StudentReader {
 
             line = line.trim();
 
-            // Если встретилась пустая строка - заканчиваем текущего студента
             if (line.isEmpty()) {
                 if (!studentName.isEmpty()) {
                     students.add(new Student(studentName, books));
@@ -29,13 +28,11 @@ public class StudentReader {
                 continue;
             }
 
-            // Если строка не содержит запятых - это имя студента
             if (!line.contains(",")) {
                 studentName = line.replace(";", "");
                 continue;
             }
 
-            // Иначе это книга
             String[] arr = line.replace(";", "").split(",");
 
             books.add(new Book(
@@ -46,7 +43,6 @@ public class StudentReader {
             ));
         }
 
-        // Добавляем последнего студента
         if (!studentName.isEmpty()) {
             students.add(new Student(studentName, books));
         }
